@@ -10,7 +10,7 @@ const createConfig = (env = 'production') => {
         },
         output: {
             path: path.resolve(__dirname, 'dist'),
-            filename: '[name].js',
+            filename: '[name].[hash].js',
         },
         module: {
             rules: [{
