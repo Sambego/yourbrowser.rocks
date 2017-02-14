@@ -1,0 +1,11 @@
+/**
+ * Base stylesheet, use this file to import other scss file.
+ * Never declare styles in this file.
+ *
+ * Component styles will be included in the componenent themselve.
+ */
+
+/**
+ * Base styles.
+ */
+@import "base/normalize";

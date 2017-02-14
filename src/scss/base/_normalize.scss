@@ -1,0 +1,29 @@
+/**
+ * normalize some styles accross browsers.
+ */
+
+/**
+ * Enable box-sizing: border-box by default.
+ */
+* {
+    box-sizing: border-box;
+}
+
+/**
+ * Set the html font-size to 10px, this makes the calculation of REM values
+ * easier.
+ */
+html {
+    font-size: 10px;
+}
+
+/**
+ * Reset the body font-size to a default 1.6rem (16px).
+ */
+body {
+    font-size: 1.6rem;
+}
+
+.foo {
+    background: tomato;
+}
