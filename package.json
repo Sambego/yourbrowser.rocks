@@ -6,7 +6,8 @@
   "author": "Sambego <sambellen@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build:dev": "webpack-dev-server --content-base dist --inline --hot --progress"
+    "build:dev": "webpack-dev-server --content-base dist --inline --hot --progress",
+    "lint": "eslint src/js"
   },
   "dependencies": {},
   "devDependencies": {
