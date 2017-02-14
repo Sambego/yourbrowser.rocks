@@ -6,6 +6,13 @@
  */
 
 /**
+ * Variables.
+ */
+@import "config/typo";
+@import "config/colors";
+
+/**
  * Base styles.
  */
 @import "base/normalize";
+@import "base/typo";

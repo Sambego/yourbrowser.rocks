@@ -3,7 +3,7 @@ import path from 'path';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-const createConfig = (env = 'production') => {
+const createConfig = (env = 'development') => {
     return {
         entry: {
             script: './src/js/index.js',

@@ -1,0 +1,20 @@
+/**
+ * The header component.
+ */
+
+@import "../../../scss/config/colors";
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 1rem 2rem;
+
+    background: $primary;
+
+    &__title {
+        color: $white;
+    }
+}
