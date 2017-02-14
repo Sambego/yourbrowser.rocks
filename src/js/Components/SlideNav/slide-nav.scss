@@ -1,0 +1,20 @@
+.slide-nav {
+    position: fixed;
+    top: 50%;
+    left: 2rem;
+
+    width: 2rem;
+    height: 2rem;
+
+    background: red;
+
+    border-radius: 50%;
+
+    &--left {
+    }
+
+    &--right {
+        left: auto;
+        right: 2rem;
+    }
+}

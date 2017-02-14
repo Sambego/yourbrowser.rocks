@@ -1,7 +1,7 @@
 import {h, render, Component} from 'preact';
 import styles from './header.scss';
 
-const Container = ({children}) => {
+const HEADER = () => {
     return (
         <header className={styles.header}>
             <h1 className={styles.header__title} >Your browser rocks!</h1>
@@ -9,6 +9,6 @@ const Container = ({children}) => {
     );
 };
 
-Container.propTypes = {};
+HEADER.propTypes = {};
 
-export default Container;
+export default HEADER;

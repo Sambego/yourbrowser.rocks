@@ -1,8 +1,11 @@
 import {h, render, Component} from 'preact';
+import {Slide} from '../../Components';
 
 const LocationPage = ({children}) => {
     return (
-        <h1>Location!</h1>
+        <Slide previous="/battery">
+            <h1>Location!</h1>
+        </Slide>
     );
 };
 

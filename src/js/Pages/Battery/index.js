@@ -1,8 +1,11 @@
 import {h, render, Component} from 'preact';
+import {Slide} from '../../Components';
 
 const BatteryPage = ({children}) => {
     return (
-        <h1>Battery!</h1>
+        <Slide next="/location">
+            <h1>Battery!</h1>
+        </Slide>
     );
 };
 

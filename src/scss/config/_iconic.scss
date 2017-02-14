@@ -1,0 +1,10 @@
+
+$icon-font-path: '../fonts/iconic/';
+
+@font-face {
+    font-family: 'iconic-sm';
+    src: url('#{$icon-font-path}iconic-sm.eot');
+    src: url('#{$icon-font-path}iconic-sm.eot?#iconic-sm') format('embedded-opentype'), url('#{$icon-font-path}iconic-sm.woff') format('woff'), url('#{$icon-font-path}iconic-sm.ttf') format('truetype'), url('#{$icon-font-path}iconic-sm.svg#iconic-sm') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
