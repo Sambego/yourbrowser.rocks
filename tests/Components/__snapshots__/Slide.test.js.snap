@@ -1,0 +1,1 @@
+exports[`Icon should render correctly 1`] = `"<section><a class=\"slide-nav--left\" href=\"/previous\"><i class=\"iconic iconic-sm iconic-left \"></i></a><a class=\"slide-nav--right\" href=\"/next\"><i class=\"iconic iconic-sm iconic-right \"></i></a><p>content</p></section>"`;

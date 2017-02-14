@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import {Icon} from '../';
 import styles from './slide-nav.scss';
 
-const SlideNav = ({children, direction, to}) => {
+const SlideNav = ({direction, to}) => {
     const classes = classnames(styles['slide-nav'], {
         [styles['slide-nav--left']]: direction === 'left',
         [styles['slide-nav--right']]: direction === 'right',
@@ -18,7 +18,6 @@ const SlideNav = ({children, direction, to}) => {
 };
 
 SlideNav.propTypes = {
-    children: element.isRequired,
     direction: string,
     to: string,
 };
