@@ -2,6 +2,7 @@
  * The header component.
  */
 
+@import "../../../scss/config/typo";
 @import "../../../scss/config/colors";
 
 .header {
@@ -13,9 +14,11 @@
     width: 100%;
     padding: 1rem 2rem;
 
-    background: $primary;
+    background: $secondary;
 
     &__title {
         color: $white;
+        font-family: $roboto;
+        font-weight: $font-weight-light;
     }
 }

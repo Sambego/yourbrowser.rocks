@@ -3,9 +3,16 @@
  * Never declare styles in this file.
  */
 
+$roboto: 'Roboto', Helvetica, sans-serif;
+
 $font-size: 1.6rem;
-$font-family: Helvetica, Arial, sans-serif;
+$font-family: $roboto;
 
 $h1-font-size: 2.4rem;
 $h2-font-size: 2rem;
 $h3-font-size: 1.8rem;
+
+$font-weight-light: 100;
+$font-weight-medium: 300;
+$font-weight-normal: 400;
+$font-weight-bold:  700;

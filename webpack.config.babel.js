@@ -25,6 +25,9 @@ const createConfig = (env = 'development') => {
                     use: ['css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss-loader', 'sass-loader'],
                 }),
             }, {
+                test: /\.(woff|woff2)$/,
+                use: 'file-loader?name=[name].[ext]',
+            }, {
                 test: /\.(xml|html|txt|md)$/,
                 use: 'raw-loader',
             }],
