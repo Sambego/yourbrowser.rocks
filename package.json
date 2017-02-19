@@ -5,7 +5,12 @@
   "author": "Sambego <sambellen@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build:prod": "NODE_ENV=production webpack",
     "build:dev": "webpack-dev-server --content-base dist --inline --hot --progress",
+    "git:pull:master": "git checkout master && git pull",
+    "git:publish": "git push origin `git subtree split --prefix dist master`:gh-pages --force",
+    "git:clean": "git fetch -p",
+    "ghpages": "npm run git:pull:master && npm run build:prod && npm run git:publish && npm run git:clean",
     "lint": "eslint src/js",
     "test:jest": "jest",
     "rebuild:sass": "npm rebuild node-sass"
