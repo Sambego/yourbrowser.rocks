@@ -14,7 +14,7 @@
     "lint": "eslint src/js",
     "test:jest": "jest",
     "rebuild:sass": "npm rebuild node-sass",
-    "prepush": "npm run build:prod && git add dist/ && git commit -nm 'Add builded content to the dist/ folder.' --allow-empty && echo true"
+    "postcommit": "npm run build:prod && git add dist/ && git commit -nm 'Add builded content to the dist/ folder.' --allow-empty && echo true"
   },
   "dependencies": {
     "classnames": "^2.2.5",
