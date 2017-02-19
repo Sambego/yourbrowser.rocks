@@ -9,5 +9,14 @@ p,
 h1,
 h2,
 h3 {
-    margin: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+/**
+ * Intro styles
+ */
+.intro {
+    margin: 0 0 4rem;
+
+    font-size: 2rem;
 }

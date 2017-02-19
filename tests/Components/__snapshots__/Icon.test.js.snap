@@ -1,5 +1,1 @@
-exports[`Icon should add a color class 1`] = `true`;
-
-exports[`Icon should add an icon class 1`] = `true`;
-
-exports[`Icon should render correctly 1`] = `"<i class=\"iconic iconic-sm iconic-home tomato\"></i>"`;
+exports[`Icon should render correctly 1`] = `"<span class style=\"color: tomato;\"></span>"`;

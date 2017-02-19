@@ -1,0 +1,25 @@
+/**
+ * The home pages.
+ */
+
+@import "../../../scss/config/colors";
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 8rem 2rem 2rem 2rem;
+
+    background: lighten($gray-dark, 10deg);
+}
+
+.container {
+    width: 100%;
+    max-width: 40rem;
+
+    text-align: center;
+
+    color: $white;
+}
