@@ -3,12 +3,12 @@ import {h, render as PreactRender} from 'preact';
 import {Icon} from '../../src/js/Components';
 
 describe('Icon', () => {
-    const icon = 'home';
+    const icon = 'browser';
     const color = 'tomato';
 
     it('should render correctly', () => {
         const iconElement = render(
-            <Icon icon={icon} color={color}/>
+            <Icon icon={icon} color={color} />
         );
 
         expect(iconElement).toMatchSnapshot();
@@ -16,17 +16,17 @@ describe('Icon', () => {
 
     it('should add an icon class', () => {
         const iconElement = PreactRender(
-            <Icon icon={icon}/>
+            <Icon name={icon }/>
         );
 
-        expect(iconElement.classList.contains(`iconic-${icon}`)).toMatchSnapshot();
+        expect(iconElement.classList.contains(`icon--${icon}`)).toBeTruthy();
     });
 
-    it('should add a color class', () => {
+    it('should add an icon size class', () => {
         const iconElement = PreactRender(
-            <Icon icon={icon} color={color}/>
+            <Icon name={icon} size="small" />
         );
 
-        expect(iconElement.classList.contains(color)).toMatchSnapshot();
+        expect(iconElement.classList.contains('icon--small')).toBeTruthy();
     });
 });

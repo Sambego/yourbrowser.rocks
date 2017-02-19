@@ -30,6 +30,9 @@ const createConfig = (env = 'development') => {
             }, {
                 test: /\.(xml|html|txt|md)$/,
                 use: 'raw-loader',
+            }, {
+                test: /\.svg$/,
+                use: 'svg-inline-loader',
             }],
         },
         devtool: 'source-map',
