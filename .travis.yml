@@ -8,4 +8,4 @@ before_install:
 
 script:
   - yarn test:jest
-  - yarn lint -- --bail
+  - yarn lint --bail
