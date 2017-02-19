@@ -5,6 +5,8 @@ node_js:
 
 before_install:
   - npm install npm@3 -g
+  - npm install yarn -g
+  - yarn
 
 script:
   - npm run test:jest

@@ -1,8 +1,7 @@
 {
-  "name": "idktbcdt",
+  "name": "yourbrowser.rocks",
   "version": "1.0.0",
   "description": "I didn't know the browser could do that",
-  "main": "index.js",
   "author": "Sambego <sambellen@gmail.com>",
   "license": "MIT",
   "scripts": {
