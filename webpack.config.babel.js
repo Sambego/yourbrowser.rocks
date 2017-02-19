@@ -44,7 +44,7 @@ const createConfig = (env = 'development') => {
                 disable: env !== 'production',
             }),
             new HtmlWebpackPlugin({
-                template: './index.html',
+                template: './src/index.html',
             }),
         ],
         devServer: {
