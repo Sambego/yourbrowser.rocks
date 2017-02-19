@@ -1,20 +1,42 @@
 import {h, render, Component} from 'preact';
-import {bool, string} from 'proptypes';
+import {string, oneOf, object} from 'proptypes';
 import classnames from 'classnames';
+import styles from './icon.scss';
 
-const Icon = ({icon, color, flipHorizontal}) => {
-    const classes = classnames(`iconic iconic-sm iconic-${icon} ${color}`);
+const aliases = {};
 
-    return <i className={classes} />;
+const Icon = ({name, color, className, size, style}) => {
+    if (aliases.hasOwnProperty(name)) {
+        name = aliases[name];
+    }
+
+    const src = require(`../../../icons/${name}.svg`);
+    const props = {
+        className: classnames(styles.icon, styles[`icon--${name}`], className, styles[`icon--${size}`]),
+        style,
+    };
+
+    if (color && color !== 'transparent') {
+        props.style = {
+            color,
+        };
+    }
+
+    return (
+        <span dangerouslySetInnerHTML={{__html: src}} {...props} />
+    );
 };
 
 Icon.propTypes = {
+    className: string,
     color: string,
-    icon: string.isRequired,
+    name: string,
+    size: oneOf(['tiny', 'small', 'medium']),
+    style: object,
 };
 
 Icon.defaultProps = {
-    color: '',
+    size: 'medium',
 };
 
 export default Icon;
